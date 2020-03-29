@@ -39,7 +39,6 @@ namespace RemoveExtraBlanks
                 }
             }
 
-            //inputString = inputString.Remove(inputString.Length - 1, 1);
             return inputString;
         }
 
