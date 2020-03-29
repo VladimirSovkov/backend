@@ -4,33 +4,10 @@ using CheckIdentifier;
 
 namespace CheckIdentifierTest
 {
+
     [TestClass]
-    public class UnitTest1
+    public class CheckingForOtherCharacters
     {
-        [TestMethod]
-        public void EnglishCharacterTest()
-        {
-            char symbol = 'H';
-            bool output;
-
-            output = Program.IsAnEnglishLetter(symbol);
-
-            Assert.AreEqual(true, output);
-
-            symbol = 'h';
-            output = Program.IsAnEnglishLetter(symbol);
-
-            Assert.AreEqual(true, output);
-
-            symbol = '5';
-            output = Program.IsAnEnglishLetter(symbol);
-
-            Assert.AreEqual(false, output);
-
-            symbol = ' ';
-            output = Program.IsAnEnglishLetter(symbol);
-        }
-
         [TestMethod]
         public void CheckForEnglishCharacterOrNumber()
         {
@@ -41,18 +18,27 @@ namespace CheckIdentifierTest
 
             Assert.AreEqual(true, outputValue);
 
-            inputLine = "hello";
-            outputValue = Program.LineConsistsOfLettersAndNumbers(inputLine);
-
-            Assert.AreEqual(true, outputValue);
-
             inputLine = "1false";
             outputValue = Program.LineConsistsOfLettersAndNumbers(inputLine);
 
             Assert.AreEqual(true, outputValue);
+        }
 
-            inputLine = "false or true";
-            outputValue = Program.LineConsistsOfLettersAndNumbers(inputLine);
+        [TestMethod]
+        public void LetterStringIsServed()
+        {
+            string inputLine = "hello";
+            bool outputValue = Program.LineConsistsOfLettersAndNumbers(inputLine);
+
+            Assert.AreEqual(true, outputValue);
+
+        }
+
+        [TestMethod]
+        public void ThereAreOtherCharactersInTheLine()
+        {
+            string inputLine = "false or true";
+            bool outputValue = Program.LineConsistsOfLettersAndNumbers(inputLine);
 
             Assert.AreEqual(false, outputValue);
 
@@ -61,7 +47,11 @@ namespace CheckIdentifierTest
 
             Assert.AreEqual(false, outputValue);
         }
+    }
 
+    [TestClass]
+    public class ID_Ñheck
+    {
         [TestMethod]
         public void TestWithTheCorrectFormOfIdentifier()
         {
@@ -69,7 +59,7 @@ namespace CheckIdentifierTest
             int output;
 
             output = Program.Main(inputString);
- 
+
             Assert.AreEqual(0, output);
 
             inputString[0] = "identificator";
@@ -77,7 +67,7 @@ namespace CheckIdentifierTest
 
             Assert.AreEqual(0, output);
 
-            inputString[0] =  "identificato000r" ;
+            inputString[0] = "identificato000r";
             output = Program.Main(inputString);
 
             Assert.AreEqual(0, output);
@@ -115,7 +105,29 @@ namespace CheckIdentifierTest
 
             Assert.AreEqual(1, output);
         }
+    }
 
+    public class ÑheckForTheNumberOfParameters
+    {
+        public void LargeNumberOfParameters()
+        {
+            string[] inputString = { "line", "lineEmpty" };
+            int output;
+
+            output = Program.Main(inputString);
+
+            Assert.AreEqual(1, output);
+        }
+
+        public void CorrectNumberOfParameters()
+        {
+            string[] inputString = { "line" };
+            int output;
+
+            output = Program.Main(inputString);
+
+            Assert.AreEqual(1, output);
+        }
 
     }
 }
