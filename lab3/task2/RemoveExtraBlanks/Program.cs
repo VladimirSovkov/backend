@@ -8,7 +8,9 @@ namespace RemoveExtraBlanks
 
         public static string RemoveExtraSpacesAndTabsInLine(string inputString)
         {
-            inputString = inputString.Trim();
+            char[] arrayChar = { ' ', '\t' };
+
+            inputString = inputString.Trim(arrayChar);
 
             bool isSpace = true;
             for (int i = 0; i < inputString.Length; )
@@ -37,6 +39,7 @@ namespace RemoveExtraBlanks
                 }
             }
 
+            //inputString = inputString.Remove(inputString.Length - 1, 1);
             return inputString;
         }
 
@@ -52,6 +55,13 @@ namespace RemoveExtraBlanks
             if(!File.Exists(args[0]))
             {
                 Console.WriteLine("This file: \"" + args[0] + "\" does not exist.");
+                return 1;
+            }
+
+
+            if (args[1] == "")
+            {
+                Console.WriteLine("file name cannot be an empty string");
                 return 1;
             }
 
