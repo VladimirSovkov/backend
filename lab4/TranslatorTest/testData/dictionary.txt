@@ -1,0 +1,6 @@
+red = красный
+apple = яблоко
+cat = кот
+number = число
+Red Square = красная площадь
+word = слово
