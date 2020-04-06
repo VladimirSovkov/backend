@@ -6,9 +6,14 @@ using System.Threading.Tasks;
 
 namespace Translate.Data.Models
 {
-    public class DictionaryFile
+    public class Vocabulary
     {
         public Dictionary<string, string> vocabulary;
+
+        public Vocabulary(string path)
+        {
+            this.vocabulary = CreatDictionary(path);
+        }
 
         private bool IsEng(string word)
         {
@@ -22,9 +27,9 @@ namespace Translate.Data.Models
             return false;
         }
 
-        public void CreatDictionary(string nameFile)
+        Dictionary<string, string> CreatDictionary(string nameFile)
         {
-            vocabulary = new Dictionary<string, string>();
+            Dictionary<string, string> vocabulary = new Dictionary<string, string>();
             StreamReader inputFile = new StreamReader(nameFile);
             string line;
             char[] symbol = { '=' };
@@ -47,6 +52,8 @@ namespace Translate.Data.Models
 
                 vocabulary.Add(KeyAndValue[0], KeyAndValue[1]);
             }
+
+            return vocabulary;
         }
 
         private string GetTranslationFromEngToRus(string word)
@@ -57,7 +64,7 @@ namespace Translate.Data.Models
                 return value;
             }
 
-            return "";
+            return value;
         }
 
         private string GetTranslationFromRusToEng(string word)

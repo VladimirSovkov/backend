@@ -35,8 +35,7 @@ namespace Translator
                 app.UseDeveloperExceptionPage();
             }
 
-            DictionaryFile vocabulary = new DictionaryFile();
-            vocabulary.CreatDictionary("Data\\Dictionary\\dictionary.txt");
+            Vocabulary vocabulary = new Vocabulary("Data\\Dictionary\\dictionary.txt");
 
             app.Run(async (context) =>
             {
@@ -53,7 +52,6 @@ namespace Translator
                     {
                         await OutputResponseCode(context, translation, 200);
                     }
-
                 }
                 else
                 {
