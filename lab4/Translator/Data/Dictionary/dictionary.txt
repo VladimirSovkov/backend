@@ -1,5 +1,7 @@
-word = слово
 red = красный
+cat = кот
+number = число
+word = слово
 Apple = яблоко
 Red Square = Красная площадь
 music = музыка
