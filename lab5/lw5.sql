@@ -1,4 +1,4 @@
---2 ÑÆ°†¢®´ ‚†°´®ÊÎ
+--2 –î–æ–±–∞–≤–∏–ª —Ç–∞–±–ª–∏—Ü—ã
 CREATE TABLE dvd (
 	dvd_id	INTEGER NOT NULL UNIQUE,
 	title	TEXT NOT NULL,
@@ -24,33 +24,33 @@ CREATE TABLE offer (
 	PRIMARY KEY(offer_id AUTOINCREMENT)
 );
 
---3 ØÆ§£Æ‚Æ¢®´ SQL ß†Ø‡Æ·Î §´Ô ß†ØÆ´≠•≠®Ô ‚†°´®Ê §†≠≠Î¨®.
+--3 –ø–æ–¥–≥–æ—Ç–æ–≤–∏–ª SQL –∑–∞–ø—Ä–æ—Å—ã –¥–ª—è –∑–∞–ø–æ–ª–Ω–µ–Ω–∏—è —Ç–∞–±–ª–∏—Ü –¥–∞–Ω–Ω—ã–º–∏.
 
-INSERT INTO dvd (title, production_year) VALUES ('å·‚®‚•´®: î®≠†´', 2019);
-INSERT INTO dvd (title, production_year) VALUES ('Ä¢†‚†‡', 2009);
-INSERT INTO dvd (title, production_year) VALUES ('á¢•ß§≠Î• ¢Æ©≠Î: è‡Æ°„¶§•≠®• ·®´Î', 2015);
-INSERT INTO dvd (title, production_year) VALUES ('å·‚®‚•‚´®: ÇÆ©≠† °•·™Æ≠•Á≠Æ·‚®', 2018);
-INSERT INTO dvd (title, production_year) VALUES ('í®‚†≠®™', 1997);
-INSERT INTO dvd (title, production_year) VALUES ('å®‡ û‡·™Æ£Æ Ø‡®Æ§†', 2015);
-INSERT INTO dvd (title, production_year) VALUES ('äÆ‡Æ´Ï ã•¢', 2019);
-INSERT INTO dvd (title, production_year) VALUES ('å·‚®‚•´®', 2012);
-INSERT INTO dvd (title, production_year) VALUES ('îÆ‡·†¶ 7', 2015);
-INSERT INTO dvd (title, production_year) VALUES ('ïÆ´Æ§≠•Æ ·•‡§Ê• 2', 2019);
-INSERT INTO dvd (title, production_year) VALUES ('ó•‡≠†Ô Ø†≠‚•‡†', 2018);
-INSERT INTO dvd (title, production_year) VALUES ('ç†Á†´Æ', 2010);
-INSERT INTO dvd (title, production_year) VALUES ('ä†™ Ø‡®‡„Á®‚Ï §‡†™Æ≠†', 2010);
-INSERT INTO dvd (title, production_year) VALUES ('É†§™®© Ô', 2010);
+INSERT INTO dvd (title, production_year) VALUES ('–ú—Å—Ç–∏—Ç–µ–ª–∏: –§–∏–Ω–∞–ª', 2019);
+INSERT INTO dvd (title, production_year) VALUES ('–ê–≤–∞—Ç–∞—Ä', 2009);
+INSERT INTO dvd (title, production_year) VALUES ('–ó–≤–µ–∑–¥–Ω—ã–µ –≤–æ–π–Ω—ã: –ü—Ä–æ–±—É–∂–¥–µ–Ω–∏–µ —Å–∏–ª—ã', 2015);
+INSERT INTO dvd (title, production_year) VALUES ('–ú—Å—Ç–∏—Ç–µ—Ç–ª–∏: –í–æ–π–Ω–∞ –±–µ—Å–∫–æ–Ω–µ—á–Ω–æ—Å—Ç–∏', 2018);
+INSERT INTO dvd (title, production_year) VALUES ('–¢–∏—Ç–∞–Ω–∏–∫', 1997);
+INSERT INTO dvd (title, production_year) VALUES ('–ú–∏—Ä –Æ—Ä—Å–∫–æ–≥–æ –ø—Ä–∏–æ–¥–∞', 2015);
+INSERT INTO dvd (title, production_year) VALUES ('–ö–æ—Ä–æ–ª—å –õ–µ–≤', 2019);
+INSERT INTO dvd (title, production_year) VALUES ('–ú—Å—Ç–∏—Ç–µ–ª–∏', 2012);
+INSERT INTO dvd (title, production_year) VALUES ('–§–æ—Ä—Å–∞–∂ 7', 2015);
+INSERT INTO dvd (title, production_year) VALUES ('–•–æ–ª–æ–¥–Ω–µ–æ —Å–µ—Ä–¥—Ü–µ 2', 2019);
+INSERT INTO dvd (title, production_year) VALUES ('–ß–µ—Ä–Ω–∞—è –ø–∞–Ω—Ç–µ—Ä–∞', 2018);
+INSERT INTO dvd (title, production_year) VALUES ('–ù–∞—á–∞–ª–æ', 2010);
+INSERT INTO dvd (title, production_year) VALUES ('–ö–∞–∫ –ø—Ä–∏—Ä—É—á–∏—Ç—å –¥—Ä–∞–∫–æ–Ω–∞', 2010);
+INSERT INTO dvd (title, production_year) VALUES ('–ì–∞–¥–∫–∏–π —è', 2010);
 
-INSERT INTO customer (first_name, last_name, passport_code, registration_date) VALUES ('ä‡†·≠Æ¢', 'à£Æ‡Ï', 8085111111, date('2002-05-10'));
-INSERT INTO customer (first_name, last_name, passport_code, registration_date) VALUES ('è†¢•´', 'è†¢´Æ¢', 9715115693, date('2018-06-03'));
-INSERT INTO customer (first_name, last_name, passport_code, registration_date) VALUES ('Ä≠‚Æ≠', 'ë™¢Æ‡ÊÆ¢', 9401324567, date('2003-05-05'));
-INSERT INTO customer (first_name, last_name, passport_code, registration_date) VALUES ('Ä≠†·‚†·®Ô', 'Ä´•™·••¢†', 9499123456, date('2010-01-12'));
-INSERT INTO customer (first_name, last_name, passport_code, registration_date) VALUES ('Ö¢†', 'ÇÆ´™Æ¢†', 9813987654, date('2009-07-07'));
-INSERT INTO customer (first_name, last_name, passport_code, registration_date) VALUES ('Ä´•™·†≠§‡†', 'à¢†≠Æ¢†', 9312100000, date('2011-09-10'));
-INSERT INTO customer (first_name, last_name, passport_code, registration_date) VALUES ('Ä‡‚•¨', 'ç®™Æ´†•¢', 9510453627, date('2013-02-02'));
-INSERT INTO customer (first_name, last_name, passport_code, registration_date) VALUES ('èÆ´®≠†', 'Å„‚Î´®≠†', 9310456789, date('2010-01-01'));
-INSERT INTO customer (first_name, last_name, passport_code, registration_date) VALUES ('Ö£Æ‡', 'è•‚‡Æ¢', 9510123456, date('2006-06-06'));
-INSERT INTO customer (first_name, last_name, passport_code, registration_date) VALUES ('ë¢•‚´†≠†', 'í®ÂÆ≠Æ¢†', 9689123456, date('2009-10-10'));
+INSERT INTO customer (first_name, last_name, passport_code, registration_date) VALUES ('–ö—Ä–∞—Å–Ω–æ–≤', '–ò–≥–æ—Ä—å', 8085111111, date('2002-05-10'));
+INSERT INTO customer (first_name, last_name, passport_code, registration_date) VALUES ('–ü–∞–≤–µ–ª', '–ü–∞–≤–ª–æ–≤', 9715115693, date('2018-06-03'));
+INSERT INTO customer (first_name, last_name, passport_code, registration_date) VALUES ('–ê–Ω—Ç–æ–Ω', '–°–∫–≤–æ—Ä—Ü–æ–≤', 9401324567, date('2003-05-05'));
+INSERT INTO customer (first_name, last_name, passport_code, registration_date) VALUES ('–ê–Ω–∞—Å—Ç–∞—Å–∏—è', '–ê–ª–µ–∫—Å–µ–µ–≤–∞', 9499123456, date('2010-01-12'));
+INSERT INTO customer (first_name, last_name, passport_code, registration_date) VALUES ('–ï–≤–∞', '–í–æ–ª–∫–æ–≤–∞', 9813987654, date('2009-07-07'));
+INSERT INTO customer (first_name, last_name, passport_code, registration_date) VALUES ('–ê–ª–µ–∫—Å–∞–Ω–¥—Ä–∞', '–ò–≤–∞–Ω–æ–≤–∞', 9312100000, date('2011-09-10'));
+INSERT INTO customer (first_name, last_name, passport_code, registration_date) VALUES ('–ê—Ä—Ç–µ–º', '–ù–∏–∫–æ–ª–∞–µ–≤', 9510453627, date('2013-02-02'));
+INSERT INTO customer (first_name, last_name, passport_code, registration_date) VALUES ('–ü–æ–ª–∏–Ω–∞', '–ë—É—Ç—ã–ª–∏–Ω–∞', 9310456789, date('2010-01-01'));
+INSERT INTO customer (first_name, last_name, passport_code, registration_date) VALUES ('–ï–≥–æ—Ä', '–ü–µ—Ç—Ä–æ–≤', 9510123456, date('2006-06-06'));
+INSERT INTO customer (first_name, last_name, passport_code, registration_date) VALUES ('–°–≤–µ—Ç–ª–∞–Ω–∞', '–¢–∏—Ö–æ–Ω–æ–≤–∞', 9689123456, date('2009-10-10'));
 
 INSERT INTO offer (dvd_id, customer_id, offer_date, return_date) VALUES (1, 1, date('2019-02-10'), date('2019-02-22'));
 INSERT INTO offer (dvd_id, customer_id, offer_date, return_date) VALUES (2, 2, date('2020-03-02'), date('2020-03-10'));
@@ -65,22 +65,22 @@ INSERT INTO offer (dvd_id, customer_id, offer_date, return_date) VALUES (10,10, 
 INSERT INTO offer (dvd_id, customer_id, offer_date, return_date) VALUES (12, 2, date('2020-04-02'), null);
 INSERT INTO offer (dvd_id, customer_id, offer_date, return_date) VALUES (13, 4, date('2020-04-03'), date('2020-04-05'));
 
---4. èÆ§£Æ‚Æ¢Ï‚• SQL ß†Ø‡Æ· ØÆ´„Á•≠®Ô ·Ø®·™† ¢·•Â DVD, £Æ§ ¢ÎØ„·™† ™Æ‚Æ‡ÎÂ 2010, #10 Æ‚·Æ‡‚®‡Æ¢†≠≠ÎÂ ¢ †´‰†¢®‚≠Æ¨ ØÆ‡Ô§™• ØÆ ≠†ß¢†≠®Ó DVD.
+--4. –ü–æ–¥–≥–æ—Ç–æ–≤—å—Ç–µ SQL –∑–∞–ø—Ä–æ—Å –ø–æ–ª—É—á–µ–Ω–∏—è —Å–ø–∏—Å–∫–∞ –≤—Å–µ—Ö DVD, –≥–æ–¥ –≤—ã–ø—É—Å–∫–∞ –∫–æ—Ç–æ—Ä—ã—Ö 2010, #10 –æ—Ç—Å–æ—Ä—Ç–∏—Ä–æ–≤–∞–Ω–Ω—ã—Ö –≤ –∞–ª—Ñ–∞–≤–∏—Ç–Ω–æ–º –ø–æ—Ä—è–¥–∫–µ –ø–æ –Ω–∞–∑–≤–∞–Ω–∏—é DVD.
 
 SELECT * FROM dvd
 WHERE dvd.production_year = 2010
 ORDER BY title;
 
---5 èÆ§£Æ‚Æ¢Ï‚• SQL ß†Ø‡Æ· §´Ô ØÆ´„Á•≠®Ô ·Ø®·™† DVD §®·™Æ¢, ™Æ‚Æ‡Î• ¢ ≠†·‚ÆÔÈ•• ¢‡•¨Ô #10 ≠†ÂÆ§Ô‚·Ô „ ™´®•≠‚Æ¢
+--5 –ü–æ–¥–≥–æ—Ç–æ–≤—å—Ç–µ SQL –∑–∞–ø—Ä–æ—Å –¥–ª—è –ø–æ–ª—É—á–µ–Ω–∏—è —Å–ø–∏—Å–∫–∞ DVD –¥–∏—Å–∫–æ–≤, –∫–æ—Ç–æ—Ä—ã–µ –≤ –Ω–∞—Å—Ç–æ—è—â–µ–µ –≤—Ä–µ–º—è #10 –Ω–∞—Ö–æ–¥—è—Ç—Å—è —É –∫–ª–∏–µ–Ω—Ç–æ–≤
 
 SELECT dvd.dvd_id, dvd.title, dvd.production_year FROM dvd
 INNER JOIN offer ON offer.dvd_id = dvd.dvd_id
 WHERE 
 	offer.return_date IS NULL;
 
---6 ç†Ø®Ë®‚• SQL ß†Ø‡Æ· §´Ô ØÆ´„Á•≠®Ô ·Ø®·™† ™´®•≠‚Æ¢, ™Æ‚Æ‡Î• °‡†´® ™†™®•-´®°Æ DVD 
---#10 §®·™® ¢ ‚•™„È•¨ £Æ§„. Ç ‡•ß„´Ï‚†‚†Â ß†Ø‡Æ·† ≠•Æ°ÂÆ§®¨Æ ‚†™¶• Æ‚‡†ß®‚Ï ™†™®• §®·™® 
---°‡†´® ™´®•≠‚Î.
+--6 –ù–∞–ø–∏—à–∏—Ç–µ SQL –∑–∞–ø—Ä–æ—Å –¥–ª—è –ø–æ–ª—É—á–µ–Ω–∏—è —Å–ø–∏—Å–∫–∞ –∫–ª–∏–µ–Ω—Ç–æ–≤, –∫–æ—Ç–æ—Ä—ã–µ –±—Ä–∞–ª–∏ –∫–∞–∫–∏–µ-–ª–∏–±–æ DVD 
+--#10 –¥–∏—Å–∫–∏ –≤ —Ç–µ–∫—É—â–µ–º –≥–æ–¥—É. –í —Ä–µ–∑—É–ª—å—Ç–∞—Ç–∞—Ö –∑–∞–ø—Ä–æ—Å–∞ –Ω–µ–æ–±—Ö–æ–¥–∏–º–æ —Ç–∞–∫–∂–µ –æ—Ç—Ä–∞–∑–∏—Ç—å –∫–∞–∫–∏–µ –¥–∏—Å–∫–∏ 
+--–±—Ä–∞–ª–∏ –∫–ª–∏–µ–Ω—Ç—ã.
 
 SELECT customer.customer_id, customer.first_name, customer.last_name, 
 customer.passport_code, customer.registration_date, dvd.dvd_id, dvd.title
