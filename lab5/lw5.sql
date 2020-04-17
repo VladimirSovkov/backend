@@ -1,4 +1,4 @@
---2 ─юсртшы ЄрсышЎ√
+--2 Добавил таблицы
 CREATE TABLE dvd (
 	dvd_id	INTEGER NOT NULL UNIQUE,
 	title	TEXT NOT NULL,
@@ -24,33 +24,33 @@ CREATE TABLE offer (
 	PRIMARY KEY(offer_id AUTOINCREMENT)
 );
 
---3 яюфуюЄютшы SQL чряЁюё√ фы  чряюыэхэш  ЄрсышЎ фрээ√ьш.
+--3 подготовил SQL запросы для заполнения таблиц данными.
 
-INSERT INTO dvd (title, production_year) VALUES ('╠ёЄшЄхыш: ╘шэры', 2019);
-INSERT INTO dvd (title, production_year) VALUES ('└трЄрЁ', 2009);
-INSERT INTO dvd (title, production_year) VALUES ('╟тхчфэ√х тющэ√: ╧Ёюсєцфхэшх ёшы√', 2015);
-INSERT INTO dvd (title, production_year) VALUES ('╠ёЄшЄхЄыш: ┬ющэр схёъюэхўэюёЄш', 2018);
-INSERT INTO dvd (title, production_year) VALUES ('╥шЄрэшъ', 1997);
-INSERT INTO dvd (title, production_year) VALUES ('╠шЁ ▐Ёёъюую яЁшюфр', 2015);
-INSERT INTO dvd (title, production_year) VALUES ('╩юЁюы№ ╦хт', 2019);
-INSERT INTO dvd (title, production_year) VALUES ('╠ёЄшЄхыш', 2012);
-INSERT INTO dvd (title, production_year) VALUES ('╘юЁёрц 7', 2015);
-INSERT INTO dvd (title, production_year) VALUES ('╒юыюфэхю ёхЁфЎх 2', 2019);
-INSERT INTO dvd (title, production_year) VALUES ('╫хЁэр  ярэЄхЁр', 2018);
-INSERT INTO dvd (title, production_year) VALUES ('═рўрыю', 2010);
-INSERT INTO dvd (title, production_year) VALUES ('╩ръ яЁшЁєўшЄ№ фЁръюэр', 2010);
-INSERT INTO dvd (title, production_year) VALUES ('├рфъшщ  ', 2010);
+INSERT INTO dvd (title, production_year) VALUES ('Мстители: Финал', 2019);
+INSERT INTO dvd (title, production_year) VALUES ('Аватар', 2009);
+INSERT INTO dvd (title, production_year) VALUES ('Звездные войны: Пробуждение силы', 2015);
+INSERT INTO dvd (title, production_year) VALUES ('Мститетли: Война бесконечности', 2018);
+INSERT INTO dvd (title, production_year) VALUES ('Титаник', 1997);
+INSERT INTO dvd (title, production_year) VALUES ('Мир Юрского приода', 2015);
+INSERT INTO dvd (title, production_year) VALUES ('Король Лев', 2019);
+INSERT INTO dvd (title, production_year) VALUES ('Мстители', 2012);
+INSERT INTO dvd (title, production_year) VALUES ('Форсаж 7', 2015);
+INSERT INTO dvd (title, production_year) VALUES ('Холоднео сердце 2', 2019);
+INSERT INTO dvd (title, production_year) VALUES ('Черная пантера', 2018);
+INSERT INTO dvd (title, production_year) VALUES ('Начало', 2010);
+INSERT INTO dvd (title, production_year) VALUES ('Как приручить дракона', 2010);
+INSERT INTO dvd (title, production_year) VALUES ('Гадкий я', 2010);
 
-INSERT INTO customer (first_name, last_name, passport_code, registration_date) VALUES ('╩Ёрёэют', '╚уюЁ№', 8085111111, date('2002-05-10'));
-INSERT INTO customer (first_name, last_name, passport_code, registration_date) VALUES ('╧ртхы', '╧ртыют', 9715115693, date('2018-06-03'));
-INSERT INTO customer (first_name, last_name, passport_code, registration_date) VALUES ('└эЄюэ', '╤ътюЁЎют', 9401324567, date('2003-05-05'));
-INSERT INTO customer (first_name, last_name, passport_code, registration_date) VALUES ('└эрёЄрёш ', '└ыхъёххтр', 9499123456, date('2010-01-12'));
-INSERT INTO customer (first_name, last_name, passport_code, registration_date) VALUES ('┼тр', '┬юыъютр', 9813987654, date('2009-07-07'));
-INSERT INTO customer (first_name, last_name, passport_code, registration_date) VALUES ('└ыхъёрэфЁр', '╚трэютр', 9312100000, date('2011-09-10'));
-INSERT INTO customer (first_name, last_name, passport_code, registration_date) VALUES ('└ЁЄхь', '═шъюырхт', 9510453627, date('2013-02-02'));
-INSERT INTO customer (first_name, last_name, passport_code, registration_date) VALUES ('╧юышэр', '┴єЄ√ышэр', 9310456789, date('2010-01-01'));
-INSERT INTO customer (first_name, last_name, passport_code, registration_date) VALUES ('┼уюЁ', '╧хЄЁют', 9510123456, date('2006-06-06'));
-INSERT INTO customer (first_name, last_name, passport_code, registration_date) VALUES ('╤тхЄырэр', '╥шїюэютр', 9689123456, date('2009-10-10'));
+INSERT INTO customer (first_name, last_name, passport_code, registration_date) VALUES ('Краснов', 'Игорь', 8085111111, date('2002-05-10'));
+INSERT INTO customer (first_name, last_name, passport_code, registration_date) VALUES ('Павел', 'Павлов', 9715115693, date('2018-06-03'));
+INSERT INTO customer (first_name, last_name, passport_code, registration_date) VALUES ('Антон', 'Скворцов', 9401324567, date('2003-05-05'));
+INSERT INTO customer (first_name, last_name, passport_code, registration_date) VALUES ('Анастасия', 'Алексеева', 9499123456, date('2010-01-12'));
+INSERT INTO customer (first_name, last_name, passport_code, registration_date) VALUES ('Ева', 'Волкова', 9813987654, date('2009-07-07'));
+INSERT INTO customer (first_name, last_name, passport_code, registration_date) VALUES ('Александра', 'Иванова', 9312100000, date('2011-09-10'));
+INSERT INTO customer (first_name, last_name, passport_code, registration_date) VALUES ('Артем', 'Николаев', 9510453627, date('2013-02-02'));
+INSERT INTO customer (first_name, last_name, passport_code, registration_date) VALUES ('Полина', 'Бутылина', 9310456789, date('2010-01-01'));
+INSERT INTO customer (first_name, last_name, passport_code, registration_date) VALUES ('Егор', 'Петров', 9510123456, date('2006-06-06'));
+INSERT INTO customer (first_name, last_name, passport_code, registration_date) VALUES ('Светлана', 'Тихонова', 9689123456, date('2009-10-10'));
 
 INSERT INTO offer (dvd_id, customer_id, offer_date, return_date) VALUES (1, 1, date('2019-02-10'), date('2019-02-22'));
 INSERT INTO offer (dvd_id, customer_id, offer_date, return_date) VALUES (2, 2, date('2020-03-02'), date('2020-03-10'));
@@ -65,22 +65,22 @@ INSERT INTO offer (dvd_id, customer_id, offer_date, return_date) VALUES (10,10, 
 INSERT INTO offer (dvd_id, customer_id, offer_date, return_date) VALUES (12, 2, date('2020-04-02'), null);
 INSERT INTO offer (dvd_id, customer_id, offer_date, return_date) VALUES (13, 4, date('2020-04-03'), date('2020-04-05'));
 
---4. ╧юфуюЄют№Єх SQL чряЁюё яюыєўхэш  ёяшёър тёхї DVD, уюф т√яєёър ъюЄюЁ√ї 2010, #10 юЄёюЁЄшЁютрээ√ї т рыЇртшЄэюь яюЁ фъх яю эрчтрэш■ DVD.
+--4. Подготовьте SQL запрос получения списка всех DVD, год выпуска которых 2010, #10 отсортированных в алфавитном порядке по названию DVD.
 
 SELECT * FROM dvd
 WHERE dvd.production_year = 2010
 ORDER BY title;
 
---5 ╧юфуюЄют№Єх SQL чряЁюё фы  яюыєўхэш  ёяшёър DVD фшёъют, ъюЄюЁ√х т эрёЄю ∙хх тЁхь  #10 эрїюф Єё  є ъышхэЄют
+--5 Подготовьте SQL запрос для получения списка DVD дисков, которые в настоящее время #10 находятся у клиентов
 
 SELECT dvd.dvd_id, dvd.title, dvd.production_year FROM dvd
 INNER JOIN offer ON offer.dvd_id = dvd.dvd_id
 WHERE 
 	offer.return_date IS NULL;
 
---6 ═ряш°шЄх SQL чряЁюё фы  яюыєўхэш  ёяшёър ъышхэЄют, ъюЄюЁ√х сЁрыш ъръшх-ышсю DVD 
---#10 фшёъш т Єхъє∙хь уюфє. ┬ Ёхчєы№ЄрЄрї чряЁюёр эхюсїюфшью Єръцх юЄЁрчшЄ№ ъръшх фшёъш 
---сЁрыш ъышхэЄ√.
+--6 Напишите SQL запрос для получения списка клиентов, которые брали какие-либо DVD 
+--#10 диски в текущем году. В результатах запроса необходимо также отразить какие диски 
+--брали клиенты.
 
 SELECT customer.customer_id, customer.first_name, customer.last_name, 
 customer.passport_code, customer.registration_date, dvd.dvd_id, dvd.title
