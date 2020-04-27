@@ -1,4 +1,4 @@
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Microsoft.VisualStudio.TestTools.UnitTesting; 
 using Translator;
 using Translate.Data.Models;
 using System.Collections.Generic;
@@ -14,12 +14,12 @@ namespace TranslatorTest
             Vocabulary createdDictionaryFromFile = new Vocabulary("..\\..\\..\\testData\\dictionary.txt");
             Dictionary<string, string> OutputDictionary = new Dictionary<string, string>
             {
-                ["red"] = "красный",
-                ["apple"] = "яблоко",
-                ["cat"] = "кот",
-                ["number"] = "число",
-                ["red square"] = "красная площадь",
-                ["word"] = "слово" 
+                ["red"] = "РєСЂР°СЃРЅС‹Р№",
+                ["apple"] = "СЏР±Р»РѕРєРѕ",
+                ["cat"] = "РєРѕС‚",
+                ["number"] = "С‡РёСЃР»Рѕ",
+                ["red square"] = "РєСЂР°СЃРЅР°СЏ РїР»РѕС‰Р°РґСЊ",
+                ["word"] = "СЃР»РѕРІРѕ" 
             };
 
             CollectionAssert.AreEquivalent(OutputDictionary, createdDictionaryFromFile.vocabulary);
@@ -46,13 +46,13 @@ namespace TranslatorTest
         {
             string translatedWord = createdDictionaryFromFile.GetWordTranslation("apple");
 
-            Assert.AreEqual("яблоко", translatedWord);
+            Assert.AreEqual("СЏР±Р»РѕРєРѕ", translatedWord);
         }
 
         [TestMethod]
         public void SearchForTranslationFromRusIntoEng()
         {
-            string translatedWord = createdDictionaryFromFile.GetWordTranslation("красная площадь");
+            string translatedWord = createdDictionaryFromFile.GetWordTranslation("РєСЂР°СЃРЅР°СЏ РїР»РѕС‰Р°РґСЊ");
 
             Assert.AreEqual("red square", translatedWord);
         }
