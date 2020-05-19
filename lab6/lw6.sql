@@ -67,12 +67,14 @@ INSERT INTO track_downloads (track_id, user_id, download_time ) VALUES (9, 5, '2
 --    ровно download_count скачиваний 19 ноября 2010 года.
 
 
-SELECT SUM(download_count), count(user_id)
+SELECT download_count, COUNT(*) AS user_count
 FROM (
-	SELECT user_id, count(download_id) as download_count
+	SELECT track_id, COUNT(*) AS download_count
 	FROM track_downloads
-	WHERE download_time  = '2010-11-19'
-	GROUP BY user_id);
+	WHERE download_time = '2010-11-19'
+	GROUP BY user_id
+) AS download_count
+GROUP BY download_count;
 
 --3. (#10) Опишите разницу типов данных DATETIME и TIMESTAMP
 
@@ -144,7 +146,7 @@ FROM(
 	SELECT id_course, id_student
 	FROM enrollment_in_course
 	GROUP by id_course
-	HAVING count(DISTINCT id_student) >= 5);
+	HAVING count(DISTINCT id_student) > 5);
 
 --2. отобразить все курсы, на которые записан определенный студент.
 
